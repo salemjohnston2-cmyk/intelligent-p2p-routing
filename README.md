@@ -1,7 +1,7 @@
 # intelligent-p2p-routing
 
 Intelligent Peer-to-Peer Routing Framework
-http://B.Sc. Computer Science Final Year Project
+B.Sc. Computer Science Final Year Project
 University of Abuja, Department of Computer Science (2026)
 Author: Ayegba Salem Uredo (22/208CSC/263)
 
