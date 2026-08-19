@@ -1,0 +1,203 @@
+===========================================================================
+INTELLIGENT P2P ROUTING FRAMEWORK
+Deep Learning-Based Data Dissemination
+===========================================================================
+
+[STEP 1] Environment ready
+NumPy: 2.0.2
+NetworkX: 3.6.1
+
+===========================================================================
+[STEP 2] Experiment Configuration
+===========================================================================
+  → Network nodes: 12
+  → Training scenarios: 50
+  → Testing scenarios: 25
+  → Pairs per scenario: 12
+  → Maximum candidate path length: 5
+  → Maximum candidate routes evaluated: 12
+  → Payload size: 1024 KB
+
+===========================================================================
+[STEP 3] Creating P2P Network Topology
+===========================================================================
+  → Nodes: 12
+  → Links: 28
+  → Connected: True
+
+===========================================================================
+[STEP 4] Dynamic Network Conditions
+===========================================================================
+  → Dynamic conditions generated
+  → Sample edge: (0, 1)
+     Latency:     21.08 ms
+     Bandwidth:   43.50 Mbps
+     Congestion:  0.52
+     Packet loss: 0.112
+
+===========================================================================
+[STEP 5] Route Feature Extraction
+===========================================================================
+  → Features:
+     • total_latency
+     • min_bandwidth
+     • avg_congestion
+     • hop_count
+     • avg_packet_loss
+
+===========================================================================
+[STEP 6] Routing Quality Objective
+===========================================================================
+  → Routing objective defined
+  → Latency contribution: 30%
+  → Bandwidth contribution: 25%
+  → Congestion contribution: 20%
+  → Packet-loss contribution: 15%
+  → Hop-count contribution: 10%
+
+===========================================================================
+[STEP 7] Candidate Route Generation
+===========================================================================
+  → Example 0 → 5: 1 candidate routes
+
+===========================================================================
+[STEP 8] Building Training Dataset
+===========================================================================
+  → Training scenarios processed: 10/50
+  → Training scenarios processed: 20/50
+  → Training scenarios processed: 30/50
+  → Training scenarios processed: 40/50
+  → Training scenarios processed: 50/50
+
+  → Training dataset complete
+  → Routing examples: 4165
+  → Input features: 5
+  → Target: continuous route-quality score
+  → Target range: 0.193 - 0.921
+
+===========================================================================
+[STEP 9] Feature Scaling
+===========================================================================
+  → StandardScaler fitted using TRAINING data only
+  → No test information used during preprocessing
+
+===========================================================================
+[STEP 10] Training Deep Learning Model
+===========================================================================
+  → Model: Multi-Layer Perceptron
+  → Architecture: 5 → 32 → 16 → 1
+  → Activation: ReLU
+  → Optimizer: Adam
+  → Early stopping: Enabled
+
+  → Training complete
+  → Training time: 7.434 seconds
+  → Iterations: 228
+
+===========================================================================
+[STEP 11] Building Unseen Test Scenarios
+===========================================================================
+  → Test scenarios prepared: 5/25
+  → Test scenarios prepared: 10/25
+  → Test scenarios prepared: 15/25
+  → Test scenarios prepared: 20/25
+  → Test scenarios prepared: 25/25
+
+  → 25 completely unseen network scenarios prepared
+
+===========================================================================
+[STEP 12] Evaluating Model on Unseen Scenarios
+===========================================================================
+
+  MODEL GENERALIZATION RESULTS
+  ---------------------------------------------
+  MAE:  0.0027
+  RMSE: 0.0036
+  R²:   0.9986
+
+===========================================================================
+[STEP 13] Routing Strategies
+===========================================================================
+  → Baseline: shortest-hop routing
+  → Proposed: MLP intelligent routing
+  → Reference: oracle routing
+  → Oracle is used only as an experimental upper reference
+
+===========================================================================
+[STEP 14] Data Dissemination Model
+===========================================================================
+  → Dissemination model ready
+  → Payload size incorporated into transmission time
+  → Expected PDR used instead of a single random delivery event
+
+===========================================================================
+[STEP 15] Controlled Experimental Comparison
+===========================================================================
+  → Completed 5/25 test scenarios
+  → Completed 10/25 test scenarios
+  → Completed 15/25 test scenarios
+  → Completed 20/25 test scenarios
+  → Completed 25/25 test scenarios
+
+  → Experiment complete
+  → Test pairs: 300
+  → Conventional results: 300
+  → Intelligent results: 300
+  → Oracle results: 300
+
+===========================================================================
+[STEP 16] Performance Metrics
+===========================================================================
+
+
+METRIC                       CONVENTIONAL     INTELLIGENT          ORACLE
+---------------------------------------------------------------------------
+Latency (ms)                        48.55           52.41           52.87
+Throughput (KB/s)                 4605.99         5752.03         5780.91
+PDR                                0.8752          0.8758          0.8761
+Average Hops                         1.72            2.11            2.12
+Transmission Time (ms)             338.97          227.82          224.86
+End-to-End Delay (ms)              387.52          280.23          277.73
+Efficiency (defined)              10.4022         17.9774         18.2373
+
+===========================================================================
+[STEP 17] Intelligent Routing Improvement
+===========================================================================
+  Latency change:       +7.96%
+  Throughput change:    +24.88%
+  PDR change:           +0.08%
+  Hop-count change:     +22.72%
+  Efficiency change:    +72.82%
+
+===========================================================================
+[STEP 18] Route Selection Analysis
+===========================================================================
+  → Intelligent route matches oracle: 289/298
+  → Intelligent selection accuracy: 0.9698
+  → Conventional route matches oracle: 145/298
+  → Conventional selection accuracy: 0.4866
+
+===========================================================================
+[STEP 19] Generating Figures
+===========================================================================
+  → Figure 1: topology
+  → Figure 2: model prediction
+  → Figure 3: latency
+  → Figure 4: throughput
+  → Figure 5: PDR
+  → Figure 6: hop count
+  → Figure 7: efficiency
+
+===========================================================================
+[STEP 20] Saving Experimental Results
+===========================================================================
+
+Files created:
+  → experiment_results.json
+  → performance_comparison.csv
+  → figures/
+
+===========================================================================
+EXPERIMENT COMPLETE
+===========================================================================
+
